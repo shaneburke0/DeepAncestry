@@ -1,0 +1,45 @@
+﻿<div class="container spacer search">
+    <div class="row">
+        <div class="col-sm-6">
+            <input class="full-width" ng-model="name" type="text" />
+            <div class="spacer">
+                <h4 class="inline">Gender:</h4>
+                <input type="checkbox" name="gender" value="male" id="male-chkbox" ng-model="genderMale" />
+                <label for="male-chkbox">Male</label>
+                <input type="checkbox" name="gender" value="female" id="female-chkbox" ng-model="genderFemale" />
+                <label for="female-chkbox">Female</label>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <button class="btn full-width" ng-click="$ctrl.search(name, genderMale, genderFemale)">Search</button>
+            <div class="text-center spacer">
+                <a class="italic" href="/#!advanced">Advanced Search</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container spacer results">
+    <h2>Results</h2>
+
+    <div class="row text-center" ng-show="!$ctrl.results.length">
+        <p>No results to show</p>
+    </div>
+
+        <div class="row" ng-show="$ctrl.results.length">
+            <table class="table table-bordered">
+                <tr class="success">
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>GENDER</th>
+                    <th>BIRTHPLACE</th>
+                </tr>
+                <tr ng-repeat="person in $ctrl.results track by $index">
+                    <td>{{person.Id}}</td>
+                    <td>{{person.Name}}</td>
+                    <td>{{person.Gender}}</td>
+                    <td>{{person.Birthplace}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>

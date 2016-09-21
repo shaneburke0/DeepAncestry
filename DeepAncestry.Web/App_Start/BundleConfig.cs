@@ -17,6 +17,15 @@ namespace DeepAncestry.Web
                         "~/Scripts/libs/bootstrap.min.js",
                         "~/Scripts/libs/respond.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                        "~/Scripts/build/src.js"));
+
+            bundles.Add(new StyleBundle("~/Content/libs").Include(
+                      "~/Content/libs/bootstrap.min.css"));
+
+            bundles.Add(new StyleBundle("~/Content/app").Include(
+                      "~/Content/build/app.css"));
+
         }
     }
 }

@@ -186,6 +186,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\app\aapp.module.js" />
+    <Content Include="Scripts\app\advanced-search\advanced-search.component.js" />
+    <Content Include="Scripts\app\advanced-search\advanced-search.template.html" />
+    <Content Include="Scripts\app\basic-search\basic-search.component.js" />
+    <Content Include="Scripts\app\basic-search\basic-search.template.html" />
+    <Content Include="Scripts\app\core\core.js" />
+    <Content Include="Scripts\app\core\core.search.js" />
+    <Content Include="Scripts\app\search-results\search-results.component.js" />
+    <Content Include="Scripts\app\search-results\search-results.template.html" />
+    <Content Include="Scripts\Gruntfile.js" />
     <Content Include="Scripts\libs\angular-resource.min.js" />
     <Content Include="Scripts\libs\angular-route.min.js" />
     <Content Include="Scripts\libs\angular.min.js" />
@@ -196,6 +206,8 @@
     <Content Include="Content\template\common.less" />
     <Content Include="Content\template\search.less" />
     <Content Include="Content\template\searchResults.less" />
+    <Content Include="data\data_large.json" />
+    <Content Include="data\data_small.json" />
     <None Include="Scripts\libs\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\libs\jquery-1.10.2.min.js" />
     <Content Include="Scripts\libs\modernizr-2.6.2.js" />
@@ -213,17 +225,16 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\package.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\app\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\libs\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>

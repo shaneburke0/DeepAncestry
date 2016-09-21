@@ -1,0 +1,19 @@
+﻿<div class="container spacer results">
+    <h2>Results</h2>
+    <div class="row" ng-show="$ctrl.list">
+        <table class="table table-bordered">
+            <tr class="success">
+                <th>ID</th>
+                <th>NAME</th>
+                <th>GENDER</th>
+                <th>BIRTHPLACE</th>
+            </tr>
+            <tr ng-repeat="person in $ctrl.list track by $index">
+                <td>{{person.Id}}</td>
+                <td>{{person.Name}}</td>
+                <td>{{person.Gender}}</td>
+                <td>{{person.Birthplace}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
