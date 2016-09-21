@@ -1,10 +1,11 @@
 ﻿using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
+using System.Web.Http.Dependencies;
 
 namespace DeepAncestry.Web
 {
-    public class UnityResolver
+    public class UnityResolver : IDependencyResolver
     {
         protected IUnityContainer container;
 
